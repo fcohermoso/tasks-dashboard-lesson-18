@@ -1,6 +1,8 @@
 describe('React dashboard specs', () => {  
   it("Puede añadir tareas nuevas", () => {
     cy.visit('http://localhost:5173/');
+    
+    // cy.visit('https://tasks-dashboard-lesson-18.vercel.app/');
 
     cy.get(".LatestTasksWidgetCreateBtn").should("have.text", "Crear Tarea");
 
